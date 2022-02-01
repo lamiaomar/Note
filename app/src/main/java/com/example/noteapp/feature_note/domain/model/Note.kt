@@ -4,6 +4,7 @@ import android.hardware.lights.Light
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.noteapp.ui.theme.*
+import java.lang.Exception
 import java.sql.Timestamp
 
 @Entity
@@ -18,3 +19,5 @@ data class Note(
         val noteColor = listOf(RedOrange , LightGreen , Violet , BabyBlue , RedPink)
     }
 }
+
+class InvalidNoteException(message : String) : Exception(message)
