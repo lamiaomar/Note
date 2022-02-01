@@ -1,8 +1,9 @@
 package com.example.noteapp.feature_note.domain.model
 
+import android.hardware.lights.Light
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.noteapp.ui.theme.RedOrange
+import com.example.noteapp.ui.theme.*
 import java.sql.Timestamp
 
 @Entity
@@ -14,6 +15,6 @@ data class Note(
     @PrimaryKey val id : Int? = null
 ){
     companion object{
-        val noteColor = listOf(RedOrange , )
+        val noteColor = listOf(RedOrange , LightGreen , Violet , BabyBlue , RedPink)
     }
 }
